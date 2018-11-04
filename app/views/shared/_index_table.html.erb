@@ -15,7 +15,11 @@
         <td><%= parking_meter.name %></td>
         <td><%= parking_meter.lattitude %></td>
         <td><%= parking_meter.longitude %></td>
+        <% if parking_meter.status == 'out_of_service' %>
+        <td>out of service</td>
+        <% else %>
         <td><%= parking_meter.status %></td>
+        <% end %>
         <td><%= link_to 'Show', parking_meter %></td>
         <td><%= link_to 'Edit', edit_parking_meter_path(parking_meter) %></td>
         <td><%= link_to 'Destroy', parking_meter, method: :delete, data: { confirm: 'Are you sure?' } %></td>

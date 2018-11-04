@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
-
 
   resources :parking_meters do 
   	member do
