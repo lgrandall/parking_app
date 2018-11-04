@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @parking_meter.name %>
+</p>
+
+<p>
+  <strong>Lattitude:</strong>
+  <%= @parking_meter.lattitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @parking_meter.longitude %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @parking_meter.status %>
+</p>
+
+<%= link_to 'Edit', edit_parking_meter_path(@parking_meter) %> |
+<%= link_to 'Back', parking_meters_path %>

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Parking Meters</h1>
+
+<%= render 'shared/index_table' %>
+
+
+<br>
+
+<%= link_to 'New Parking Meter', new_parking_meter_path %> |
+<%= link_to 'Active Parking Meters', active_parking_meters_parking_meter_path(@parking_meters) %> |
+<%= link_to 'Inactive Parking Meters', inactive_parking_meters_parking_meter_path(@parking_meters) %> |
+<%= link_to 'Out Of Order', out_of_order_parking_meters_parking_meter_path(@parking_meters) %> 
+
+
